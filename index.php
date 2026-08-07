@@ -32,7 +32,7 @@
 					BUSCA CEP
 				</span>
 				<div class="wrap-input1 validate-input" data-validate = "É necessário informar o cep!">
-					<input class="input1" type="text" name="cep" placeholder="Digite o cep. Ex: 88110999" onkeypress="if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;" data-ls-module="charCounter" minlength="8" maxlength="8" required>
+					<input class="input1" type="text" name="cep" placeholder="Digite o cep. Ex: 88110999" onkeypress="return validateCepInput(event);" data-ls-module="charCounter" minlength="8" maxlength="8" required>
 					<span class="shadow-input1"></span>
 				</div>
 				<div class="container-contact1-form-btn">

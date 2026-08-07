@@ -1,3 +1,17 @@
+/**
+ * Valida se a tecla pressionada no campo de CEP corresponde a um caractere
+ * numérico, permitindo apenas dígitos serem digitados no input.
+ *
+ * @param {Event} event Evento de keypress disparado pelo input.
+ * @returns {boolean} true se o caractere for válido (numérico), false caso contrário.
+ */
+function validateCepInput(event) {
+    var evt = event || window.event;
+    var charCode = evt.keyCode;
+
+    return !isNaN(String.fromCharCode(charCode));
+}
+
 (function ($) {
     "use strict";
 
